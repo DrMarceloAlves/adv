@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marcelo Alves | Advogado Criminalista em Manaus – AM</title>
+  <meta name="description" content="Defesa criminal técnica, sigilosa e combativa em Manaus – AM. Inquéritos, Tribunal do Júri, Habeas Corpus e Consultoria Preventiva. Fale agora no WhatsApp." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Marcelo Alves | Advogado Criminalista" />
+  <meta property="og:description" content="Defesa com estratégia. Coragem com propósito. Justiça com precisão." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <style>
+    :root{
+      --bg: #000;
+      --bg-soft: #0b0b0c;
+      --card: #0e0e10;
+      --muted: #a1a1aa;
+      --text: #e5e7eb;
+      --accent: #d4d4d8;
+      --border: #242428;
+      --ring: #3f3f46;
+      --shadow: 0 10px 30px rgba(0,0,0,.6);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text);
+      background: radial-gradient(1200px 700px at 10% -10%, rgba(120,120,120,.06), transparent 60%),
+                  radial-gradient(1000px 600px at 90% -20%, rgba(120,120,120,.05), transparent 60%),
+                  linear-gradient(180deg, #000 0%, #0a0a0a 35%, #000 100%);
+      letter-spacing:.2px;
+    }
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1140px;margin:0 auto;padding:0 20px}
+    header{
+      position:sticky;top:0;z-index:30; backdrop-filter:blur(10px);
+      background: rgba(0,0,0,.55); border-bottom:1px solid var(--border);
+    }
+    .topbar{height:64px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:var(--card);border:1px solid var(--ring);box-shadow:var(--shadow)}
+    nav a{font-size:16px;padding:8px 12px;border-radius:10px}
+    nav a:hover{background:#0f0f12}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      height:46px;
+      padding:0 22px;
+      border-radius:12px;
+      border:1px solid var(--ring);
+      background:var(--card);
+      box-shadow:var(--shadow);
+      font-size:15px;
+      font-weight:600;
+    }
+    .btn.primary{background:#111216;border-color:#2b2b31}
+    .btn.primary:hover{filter:brightness(1.08)}
+    .btn.outline{background:transparent}
+    .btn-cta{
+      background:#25D366;
+      border-color:#25D366;
+      color:#ffffff;
+      font-weight:700;
+    }
+    .btn-cta:hover{filter:brightness(1.08)}
+
+    /* HERO */
+    .hero{padding:88px 0 72px; position:relative; overflow:hidden}
+    .hero h1{font-size: clamp(32px, 5vw, 56px); line-height:1.05; margin:10px 0 0; font-weight:800}
+    .hero p.lead{color:var(--accent);font-size:20px;max-width:680px;margin:18px 0 0}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .badge{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:14px}
+    .hero-card{margin-top:28px; background:linear-gradient(180deg,#0c0c10, #0a0a0c); border:1px solid var(--border); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)}
+    .quote{color:#c9c9cf; font-style:italic}
+
+    /* GRID */
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-4{grid-template-columns:repeat(4,1fr)}
+    @media (max-width:1024px){ .grid.cols-4{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:720px){ .grid.cols-3,.grid.cols-4{grid-template-columns:1fr} }
+
+    section{padding:56px 0}
+    h2{font-size: clamp(26px, 3.9vw, 40px); margin:0}
+    .subtitle{color:var(--muted); margin-top:8px; max-width:820px; font-size:16px;}
+
+    .card{background:linear-gradient(180deg,#0c0c10,#0a0a0c); border:1px solid var(--border); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)}
+    .card h3{margin:0 0 6px; font-size:20px}
+    .muted{color:var(--muted); font-size:15px;}
+
+    .list{margin:0;padding-left:18px}
+    .list li{margin:8px 0}
+
+    footer{border-top:1px solid var(--border); padding:28px 0; color:var(--muted)}
+    .stack{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+
+    /* Small helper icons (ASCII placeholders) */
+    .ico{font-weight:900; font-size:12px; width:28px; height:28px; display:grid; place-items:center; border-radius:9px; background:#101014; border:1px solid var(--ring)}
+
+    /* Smooth scroll */
+    html{scroll-behavior:smooth}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden>⚖️</div>
+        <div>
+          <div class="muted" style="font-size:12px;">Advogado Criminalista</div>
+          <strong>Marcelo Alves</strong>
+        </div>
+      </div>
+      <nav class="stack" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a
+          class="btn btn-cta"
+          href="https://wa.me/5595991620442?text=Ol%C3%A1%2C%20doutor.%20Preciso%20de%20uma%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20com%20urg%C3%AAncia."
+          target="_blank"
+          rel="noopener"
+        >
+          Fale agora
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="badge">📍 Manaus – AM</div>
+        <h1>Defesa com <span style="color:#d4d4d8">estratégia</span>.<br>Coragem com <span style="color:#d4d4d8">propósito</span>.</h1>
+        <p class="lead">Atuação técnica, sigilosa e combativa em todas as fases do processo penal — do inquérito ao Tribunal do Júri.</p>
+        <div class="hero-cta">
+          <a
+            class="btn btn-cta"
+            href="https://wa.me/5595991620442?text=Ol%C3%A1%2C%20doutor.%20Preciso%20de%20uma%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20com%20urg%C3%AAncia."
+            target="_blank"
+            rel="noopener"
+          >
+            Contato imediato
+          </a>
+          <a class="btn outline" href="#servicos">Ver serviços</a>
+          <a class="btn btn-cta" href="tel:+5595991620442">Ligar agora</a>
+        </div>
+        <div class="hero-card" role="note" aria-label="Citação">
+          <div class="stack">
+            <div class="ico" aria-hidden>☎</div>
+            <div>
+              <div class="muted" style="font-size:13px;">Atendimento imediato via WhatsApp</div>
+              <a
+                href="https://wa.me/5595991620442?text=Ol%C3%A1%2C%20doutor.%20Preciso%20de%20uma%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20com%20urg%C3%AAncia."
+                target="_blank"
+                rel="noopener"
+                style="font-weight:600; font-size:18px;"
+              >
+                (95) 99162-0442
+              </a>
+            </div>
+          </div>
+          <div style="height:1px;background:var(--border);margin:16px 0"></div>
+          <p class="quote">“Cada caso exige mais do que leis. Exige leitura de pessoas, tempo e verdade.”<br><span class="muted">— Marcelo Alves</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos">
+      <div class="container">
+        <h2>Áreas de atuação</h2>
+        <p class="subtitle">Defesa focada em resultados, com técnica e precisão em cada etapa.</p>
+        <div class="grid cols-4" style="margin-top:22px">
+          <article class="card">
+            <div class="stack"><div class="ico" aria-hidden>🗂</div><h3>Inquéritos Policiais</h3></div>
+            <p class="muted">Atuação estratégica desde a investigação: oitivas, requerimentos, diligências e garantias processuais.</p>
+          </article>
+          <article class="card">
+            <div class="stack"><div class="ico" aria-hidden>🔨</div><h3>Tribunal do Júri</h3></div>
+            <p class="muted">Defesa técnica em crimes dolosos contra a vida, teses consistentes e performance em plenário.</p>
+          </article>
+          <article class="card">
+            <div class="stack"><div class="ico" aria-hidden>🛡</div><h3>Habeas Corpus</h3></div>
+            <p class="muted">Medidas urgentes para assegurar a liberdade e conter abusos de autoridade e constrangimento ilegal.</p>
+          </article>
+          <article class="card">
+            <div class="stack"><div class="ico" aria-hidden>🔒</div><h3>Consultoria Preventiva</h3></div>
+            <p class="muted">Mapeamento de riscos, pareceres e orientações para evitar litígios e acusações futuras.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+      <div class="container">
+        <h2>Sobre Marcelo Alves</h2>
+        <p class="subtitle">Compromisso com a ética, o sigilo e a dignidade de cada cliente.</p>
+        <div class="grid cols-3" style="margin-top:22px">
+          <article class="card">
+            <p class="muted" style="line-height:1.7">Atuo em Manaus e região metropolitana em todas as instâncias. Cada processo é tratado como único, com estudo minucioso de autos, teses sólidas e presença ativa em audiências. A defesa criminal é técnica, mas também é arte, estratégia e respeito pela verdade dos fatos.</p>
+            <p class="muted" style="margin-top:10px">OAB/AM — <em>inserir número</em></p>
+          </article>
+          <article class="card">
+            <h3>Presença e Estratégia</h3>
+            <ul class="list muted">
+              <li>Acompanhamento desde a prisão em flagrante e audiências de custódia</li>
+              <li>Requerimentos e diligências na fase de investigação</li>
+              <li>Memoriais, recursos e sustentações orais</li>
+              <li>Atuação dedicada no Tribunal do Júri</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Princípios</h3>
+            <ul class="list muted">
+              <li>Sigilo e ética profissional</li>
+              <li>Transparência na condução do caso</li>
+              <li>Defesa técnica combativa</li>
+              <li>Respeito à dignidade do cliente</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO / CTA -->
+    <section id="contato">
+      <div class="container">
+        <h2>Fale agora</h2>
+        <p class="subtitle">Atendimento imediato e sigiloso. Clique e venha direto para o WhatsApp.</p>
+        <div class="stack" style="margin-top:16px">
+          <a
+            class="btn btn-cta"
+            href="https://wa.me/5595991620442?text=Ol%C3%A1%2C%20doutor.%20Preciso%20de%20uma%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20com%20urg%C3%AAncia."
+            target="_blank"
+            rel="noopener"
+          >
+            WhatsApp (95) 99162-0442
+          </a>
+          <a class="btn btn-cta" href="tel:+5595991620442">Ligar agora</a>
+        </div>
+        <p class="muted" style="margin-top:10px">Atendimento em <strong style="color:#e5e7eb">Manaus — AM</strong> e região metropolitana.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© <span id="y"></span> Marcelo Alves — Advogado Criminalista</div>
+      <div>Sigilo • Ética • Atendimento personalizado</div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD (melhora SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LegalService",
+    "name":"Marcelo Alves — Advogado Criminalista",
+    "areaServed":"Manaus, AM",
+    "telephone":"+55 95 99162-0442",
+    "url":"",
+    "address":{"@type":"PostalAddress","addressLocality":"Manaus","addressRegion":"AM","addressCountry":"BR"},
+    "sameAs":["https://wa.me/5595991620442"],
+    "priceRange":"$$"
+  }
+  </script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
