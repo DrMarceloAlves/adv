@@ -71,6 +71,30 @@
 
     /* HERO */
     .hero{padding:88px 0 72px; position:relative; overflow:hidden}
+    .hero-layout{
+      display:flex;
+      gap:40px;
+      flex-wrap:wrap;
+      align-items:flex-start;
+      justify-content:space-between;
+    }
+    .hero-main{
+      flex:1;
+      min-width:280px;
+    }
+    .hero-photo{
+      flex:1;
+      min-width:260px;
+      display:flex;
+      justify-content:center;
+    }
+    .hero-photo img{
+      width:100%;
+      max-width:420px;
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      object-fit:cover;
+    }
     .hero h1{font-size: clamp(32px, 5vw, 56px); line-height:1.05; margin:10px 0 0; font-weight:800}
     .hero p.lead{color:var(--accent);font-size:20px;max-width:680px;margin:18px 0 0}
     .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
@@ -82,8 +106,13 @@
     .grid{display:grid;gap:18px}
     .grid.cols-3{grid-template-columns:repeat(3,1fr)}
     .grid.cols-4{grid-template-columns:repeat(4,1fr)}
-    @media (max-width:1024px){ .grid.cols-4{grid-template-columns:repeat(2,1fr)} }
-    @media (max-width:720px){ .grid.cols-3,.grid.cols-4{grid-template-columns:1fr} }
+    @media (max-width:1024px){
+      .grid.cols-4{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:720px){
+      .grid.cols-3,.grid.cols-4{grid-template-columns:1fr}
+      .hero-layout{flex-direction:column;}
+    }
 
     section{padding:56px 0}
     h2{font-size: clamp(26px, 3.9vw, 40px); margin:0}
@@ -136,38 +165,46 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container">
-        <div class="badge">📍 Manaus – AM</div>
-        <h1>Defesa com <span style="color:#d4d4d8">estratégia</span>.<br>Coragem com <span style="color:#d4d4d8">propósito</span>.</h1>
-        <p class="lead">Atuação técnica, sigilosa e combativa em todas as fases do processo penal — do inquérito ao Tribunal do Júri.</p>
-        <div class="hero-cta">
-          <a
-            class="btn btn-cta"
-            href="https://wa.me/5595991620442?text=Ol%C3%A1%2C%20doutor.%20Preciso%20de%20uma%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20com%20urg%C3%AAncia."
-            target="_blank"
-            rel="noopener"
-          >
-            Contato imediato
-          </a>
-          <a class="btn outline" href="#servicos">Ver serviços</a>
-          <a class="btn btn-cta" href="tel:+5595991620442">Ligar agora</a>
-        </div>
-        <div class="hero-card" role="note" aria-label="Citação">
-          <div class="stack">
-            <div class="ico" aria-hidden>☎</div>
-            <div>
-              <div class="muted" style="font-size:13px;">Atendimento imediato via WhatsApp</div>
+        <div class="hero-layout">
+          <div class="hero-main">
+            <div class="badge">📍 Manaus – AM</div>
+            <h1>Defesa com <span style="color:#d4d4d8">estratégia</span>.<br>Coragem com <span style="color:#d4d4d8">propósito</span>.</h1>
+            <p class="lead">Atuação técnica, sigilosa e combativa em todas as fases do processo penal — do inquérito ao Tribunal do Júri.</p>
+            <div class="hero-cta">
               <a
+                class="btn btn-cta"
                 href="https://wa.me/5595991620442?text=Ol%C3%A1%2C%20doutor.%20Preciso%20de%20uma%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20com%20urg%C3%AAncia."
                 target="_blank"
                 rel="noopener"
-                style="font-weight:600; font-size:18px;"
               >
-                (95) 99162-0442
+                Contato imediato
               </a>
+              <a class="btn outline" href="#servicos">Ver serviços</a>
+              <a class="btn btn-cta" href="tel:+5595991620442">Ligar agora</a>
+            </div>
+            <div class="hero-card" role="note" aria-label="Citação">
+              <div class="stack">
+                <div class="ico" aria-hidden>☎</div>
+                <div>
+                  <div class="muted" style="font-size:13px;">Atendimento imediato via WhatsApp</div>
+                  <a
+                    href="https://wa.me/5595991620442?text=Ol%C3%A1%2C%20doutor.%20Preciso%20de%20uma%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20com%20urg%C3%AAncia."
+                    target="_blank"
+                    rel="noopener"
+                    style="font-weight:600; font-size:18px;"
+                  >
+                    (95) 99162-0442
+                  </a>
+                </div>
+              </div>
+              <div style="height:1px;background:var(--border);margin:16px 0"></div>
+              <p class="quote">“Cada caso exige mais do que leis. Exige leitura de pessoas, tempo e verdade.”<br><span class="muted">— Marcelo Alves</span></p>
             </div>
           </div>
-          <div style="height:1px;background:var(--border);margin:16px 0"></div>
-          <p class="quote">“Cada caso exige mais do que leis. Exige leitura de pessoas, tempo e verdade.”<br><span class="muted">— Marcelo Alves</span></p>
+
+          <div class="hero-photo">
+            <img src="marcelo-tribunal.jpg" alt="Marcelo Alves realizando sustentação oral no tribunal">
+          </div>
         </div>
       </div>
     </section>
@@ -204,8 +241,12 @@
         <h2>Sobre Marcelo Alves</h2>
         <p class="subtitle">Compromisso com a ética, o sigilo e a dignidade de cada cliente.</p>
         <div class="grid cols-3" style="margin-top:22px">
-          <article class="card">
-            <p class="muted" style="line-height:1.7">Atuo em Manaus e região metropolitana em todas as instâncias. Cada processo é tratado como único, com estudo minucioso de autos, teses sólidas e presença ativa em audiências. A defesa criminal é técnica, mas também é arte, estratégia e respeito pela verdade dos fatos.</p>
+          <article class="card" style="text-align:center;">
+            <img src="marcelo-sobre.jpg" alt="Marcelo Alves" 
+              style="width:100%;max-width:260px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.4);margin-bottom:16px;object-fit:cover;">
+            <p class="muted" style="line-height:1.7">
+              Atuo em Manaus e região metropolitana em todas as instâncias. Cada processo é tratado como único, com estudo minucioso de autos, teses sólidas e presença ativa em audiências. A defesa criminal é técnica, mas também é arte, estratégia e respeito pela verdade dos fatos.
+            </p>
             <p class="muted" style="margin-top:10px">OAB/AM — <em>inserir número</em></p>
           </article>
           <article class="card">
